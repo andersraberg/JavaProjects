@@ -1,13 +1,16 @@
 package proj1;
 
+import java.util.logging.Logger;
+
 public class HelloWorld {
+	private static Logger LOGGER = Logger.getLogger(HelloWorld.class.getName());
 
 	public static void main(String[] args) {
-		System.out.println("Hello World!");
-		System.out.println("Hello Universe!");
-		System.out.println("Hello Universe again!");
-		System.out.println("Hello Multiverse!");
-		System.out.println("Hello again");
+		LOGGER.info("Hello World!");
+		LOGGER.info("Hello Universe!");
+		LOGGER.info("Hello Universe again!");
+		LOGGER.info("Hello Multiverse!");
+		LOGGER.info("Hello again");
 	}
 
 }
