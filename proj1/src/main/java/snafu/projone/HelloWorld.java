@@ -1,9 +1,9 @@
-package proj1;
+package snafu.projone;
 
 import java.util.logging.Logger;
 
 public class HelloWorld {
-	private static Logger LOGGER = Logger.getLogger(HelloWorld.class.getName());
+	private static final Logger LOGGER = Logger.getLogger(HelloWorld.class.getName());
 
 	public static void main(String[] args) {
 		LOGGER.info("Hello World!");
@@ -11,6 +11,7 @@ public class HelloWorld {
 		LOGGER.info("Hello Universe again!");
 		LOGGER.info("Hello Multiverse!");
 		LOGGER.info("Hello again");
+		
 	}
 
 }

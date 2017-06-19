@@ -40,6 +40,8 @@ import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 
 public class GridBagLayoutDemo {
+	private GridBagLayoutDemo() {
+	}
 
 	public static void addComponentsToPane(Container pane) {
 		pane.setLayout(new GridBagLayout());
@@ -70,10 +72,6 @@ public class GridBagLayoutDemo {
 	}
 
 	public static void main(String[] args) {
-		SwingUtilities.invokeLater(new Runnable() {
-			public void run() {
-				createAndShowGUI();
-			}
-		});
+		SwingUtilities.invokeLater(GridBagLayoutDemo::createAndShowGUI);
 	}
 }
