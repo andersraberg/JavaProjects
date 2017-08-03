@@ -2,5 +2,5 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'application'
 
-mainClassName = "proj1.HelloWorld"
+mainClassName = "snafu.projone.HelloWorld"
 	
